@@ -44,6 +44,9 @@
       transition: transform 0.3s ease;
       margin: 0 auto;
     }
+    .top-buffer {
+      padding-top: 80px; /* Push image down to avoid being hidden under nav */
+    }
     header {
       background: #6b5b95; /* Purple background for header */
       color: white;
@@ -116,7 +119,9 @@
   </style>
 </head>
 <body>
-  <img src="images/index.jpg" alt="Top Image" class="top-image" />
+  <div class="top-buffer">
+    <img src="images/index.jpg" alt="Top Image" class="top-image" />
+  </div>
 
   <nav>
     <div class="logo">Nandi Nāth</div>
